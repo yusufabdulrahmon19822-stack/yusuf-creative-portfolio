@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yusuf Creative — Graphic Designer</title>
+<meta name="description" content="Yusuf Creative — Graphic design, branding, advertising and social media design.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--bg:#080706;--card:#11100e;--orange:#ff6a00;--orange2:#ff9d4d;--white:#fff;--muted:#aaa39d;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--white);font-family:"DM Sans",sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}section{padding:105px 0;position:relative}
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:17px 0;background:rgba(8,7,6,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:700;font-size:21px}.brand img{width:42px;height:42px;object-fit:contain;border-radius:9px}.nav-links{display:flex;gap:28px;align-items:center;list-style:none}.nav-links a{color:#bdb7b1;font-size:14px}.nav-links a:hover{color:#fff}.nav-cta{padding:11px 19px;border-radius:999px;background:linear-gradient(90deg,var(--orange),#ff8b2b);color:#fff!important;box-shadow:0 0 28px rgba(255,106,0,.25)}.menu{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:140px;overflow:hidden}.hero:before{content:"";position:absolute;width:650px;height:650px;right:-250px;top:-180px;background:radial-gradient(circle,rgba(255,106,0,.22),transparent 66%);animation:float 7s ease-in-out infinite}.hero:after{content:"";position:absolute;width:500px;height:500px;left:-250px;bottom:-260px;background:radial-gradient(circle,rgba(255,157,77,.1),transparent 66%)}@keyframes float{50%{transform:translate(-35px,35px)}}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(255,106,0,.35);background:rgba(255,106,0,.08);color:#ffad70;padding:9px 14px;border-radius:999px;font-size:12px;margin-bottom:24px}.dot{width:7px;height:7px;background:var(--orange);border-radius:50%;box-shadow:0 0 14px var(--orange)}h1{font-family:"Space Grotesk";font-size:clamp(58px,8vw,102px);line-height:.9;letter-spacing:-6px}.gradient{background:linear-gradient(90deg,#fff,#ff8a32,#ffd0ad,#fff);background-size:250%;-webkit-background-clip:text;color:transparent;animation:grad 5s linear infinite}@keyframes grad{to{background-position:250%}}.hero p{color:var(--muted);font-size:18px;line-height:1.8;max-width:600px;margin-top:28px}.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:15px 23px;border-radius:999px;font-size:14px;font-weight:700;transition:.3s}.primary{background:linear-gradient(90deg,var(--orange),#ff922f);box-shadow:0 0 30px rgba(255,106,0,.25)}.primary:hover{transform:translateY(-4px);box-shadow:0 15px 40px rgba(255,106,0,.32)}.secondary{border:1px solid var(--line);background:rgba(255,255,255,.03)}.secondary:hover{border-color:rgba(255,106,0,.55);background:rgba(255,106,0,.08)}
+.hero-art{height:500px;position:relative}.art-card{position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:27px;overflow:hidden;box-shadow:0 35px 90px rgba(0,0,0,.55);background:#15110d}.art-card img{width:100%;height:100%;object-fit:cover}.art-one{width:300px;height:400px;right:0;top:20px;transform:rotate(7deg)}.art-two{width:250px;height:330px;left:25px;bottom:0;transform:rotate(-7deg)}.art-label{position:absolute;left:22px;bottom:20px;background:rgba(0,0,0,.6);padding:9px 12px;border-radius:10px;font-size:11px;letter-spacing:1.5px}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:22px 0}.track{display:flex;width:max-content;gap:65px;animation:marquee 25s linear infinite}.track span{font-family:"Space Grotesk";font-size:13px;letter-spacing:2px;color:#716c67}@keyframes marquee{to{transform:translateX(-50%)}}
+.label{color:#ff9652;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700;margin-bottom:17px}.title{font-family:"Space Grotesk";font-size:clamp(40px,5vw,68px);line-height:1;letter-spacing:-3px;max-width:800px}.desc{color:var(--muted);line-height:1.8;max-width:610px;margin-top:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:58px}.service{padding:32px;min-height:270px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.01));position:relative;overflow:hidden;transition:.4s}.service:hover{transform:translateY(-8px);border-color:rgba(255,106,0,.45)}.service:after{content:"";position:absolute;width:130px;height:130px;right:-45px;bottom:-45px;background:var(--orange);filter:blur(80px);opacity:0;transition:.4s}.service:hover:after{opacity:.28}.num{color:#5f5a55;font-size:12px}.icon{font-size:29px;margin:34px 0 19px;color:#ff8a3c}.service h3{font-family:"Space Grotesk";font-size:25px;margin-bottom:11px}.service p{color:#89837d;line-height:1.7}
+.dark{background:#0d0b09}.benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:58px}.benefit{padding:38px;border:1px solid var(--line);border-radius:24px;background:#11100e}.benefit span{color:#ff9652;font-size:12px}.benefit h3{font-family:"Space Grotesk";font-size:27px;margin:23px 0 11px}.benefit p{color:#89837d;line-height:1.75}
+.portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:58px}.project{height:410px;border-radius:26px;overflow:hidden;border:1px solid var(--line);position:relative;background:#151311}.project img{width:100%;height:100%;object-fit:cover;transition:.6s}.project:hover img{transform:scale(1.05)}.project-info{position:absolute;left:0;right:0;bottom:0;padding:30px;padding-top:120px;background:linear-gradient(transparent,rgba(0,0,0,.94))}.project-info small{color:#d0c8c1;letter-spacing:2px}.project-info h3{font-family:"Space Grotesk";font-size:28px;margin-top:6px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px;align-items:center}.about-logo{height:460px;border:1px solid var(--line);border-radius:30px;display:grid;place-items:center;background:radial-gradient(circle,rgba(255,106,0,.18),transparent 55%),#11100e}.about-logo img{width:55%;max-width:250px}.about p{color:#999;line-height:1.9;margin-top:18px}.stats{display:flex;gap:45px;flex-wrap:wrap;margin-top:35px}.stat strong{display:block;font-family:"Space Grotesk";font-size:38px;color:#ff8a3c}.stat small{color:#666}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:58px}.testimonial{padding:30px;border:1px solid var(--line);border-radius:23px;background:#11100e}.stars{color:#ff8a3c;letter-spacing:3px;margin-bottom:20px}.testimonial p{color:#999;line-height:1.8}.client{display:flex;gap:12px;align-items:center;margin-top:25px}.avatar{width:41px;height:41px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--orange),#ffbd7d);font-weight:700}
+.faq{max-width:850px;margin:55px auto 0}.faq-item{border-top:1px solid var(--line)}.question{width:100%;background:none;border:0;color:#fff;padding:24px 0;display:flex;justify-content:space-between;text-align:left;font-size:17px;cursor:pointer}.question span{color:#ff8a3c;font-size:24px;transition:.3s}.answer{max-height:0;overflow:hidden;transition:.4s}.answer p{color:#8f8983;line-height:1.8;padding-bottom:24px}.faq-item.active .question span{transform:rotate(45deg)}
+.cta{text-align:center;overflow:hidden}.cta:before{content:"";position:absolute;width:700px;height:700px;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,106,0,.17),transparent 65%)}.cta-content{position:relative}.cta h2{font-family:"Space Grotesk";font-size:clamp(48px,7vw,90px);line-height:.94;letter-spacing:-5px}.cta p{max-width:560px;margin:24px auto;color:#999;line-height:1.8}
+.contact-box{margin-top:45px;padding:28px;border:1px solid rgba(255,106,0,.25);border-radius:22px;background:rgba(255,106,0,.05);display:flex;justify-content:center;gap:25px;flex-wrap:wrap}.contact-box a{color:#ffb078}
+footer{border-top:1px solid var(--line);padding:32px 0}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer p{color:#666;font-size:13px}.socials{display:flex;gap:20px;color:#777;font-size:13px}.socials a:hover{color:#fff}.whatsapp{position:fixed;right:20px;bottom:20px;width:59px;height:59px;border-radius:50%;display:grid;place-items:center;background:#25D366;z-index:1001;box-shadow:0 10px 35px rgba(0,0,0,.5);font-size:25px;transition:.3s}.whatsapp:hover{transform:scale(1.1)}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.menu{display:block}.nav-links{position:absolute;top:75px;left:4%;width:92%;padding:23px;background:#11100e;border:1px solid var(--line);border-radius:20px;display:none;flex-direction:column;align-items:flex-start}.nav-links.active{display:flex}.hero-grid,.about{grid-template-columns:1fr}.hero-art{height:420px}.grid3,.testimonials{grid-template-columns:1fr}.benefits{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr}.about-logo{height:380px}.footer{flex-direction:column;text-align:center}}
+@media(max-width:500px){section{padding:78px 0}.hero h1{font-size:55px;letter-spacing:-4px}.hero p{font-size:16px}.buttons{flex-direction:column}.btn{width:100%}.art-one{width:235px;height:315px}.art-two{width:190px;height:255px}.title{font-size:42px}.project{height:330px}.cta h2{font-size:52px;letter-spacing:-3px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<a class="brand" href="#home">
+<img src="assets/yusuf-creative-logo.png" alt="Yusuf Creative logo">
+<span>Yusuf Creative.</span>
+</a>
+<button class="menu" id="menu">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#work">Work</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#faq">Q&A</a></li>
+<li><a class="nav-cta" target="_blank" href="https://wa.me/2348030425401?text=Hello%20Yusuf%20Creative%2C%20I%27d%20like%20to%20work%20with%20you.">Hire Me</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-grid">
+<div class="reveal">
+<div class="eyebrow"><span class="dot"></span> Available for new projects</div>
+<h1>Design that<br><span class="gradient">gets noticed.</span></h1>
+<p>I create bold, professional and memorable visuals that help brands communicate clearly, attract attention and look premium.</p>
+<div class="buttons">
+<a class="btn primary" target="_blank" href="https://wa.me/2348030425401?text=Hello%20Yusuf%20Creative%2C%20I%27m%20interested%20in%20your%20design%20services.">Start a Project →</a>
+<a class="btn secondary" href="#work">View My Work</a>
+</div>
+</div>
+<div class="hero-art reveal">
+<div class="art-card art-one"><img src="assets/nevora.png" alt="Nevora brand identity"><div class="art-label">BRAND IDENTITY</div></div>
+<div class="art-card art-two"><img src="assets/zest-zobo.png" alt="Zest Zobo advertisement"><div class="art-label">ADVERTISING</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="marquee"><div class="track">
+<span>BRAND IDENTITY</span><span>LOGO DESIGN</span><span>ADVERTISING</span><span>SOCIAL MEDIA</span><span>CREATIVE DESIGN</span><span>BRAND STRATEGY</span>
+<span>BRAND IDENTITY</span><span>LOGO DESIGN</span><span>ADVERTISING</span><span>SOCIAL MEDIA</span><span>CREATIVE DESIGN</span><span>BRAND STRATEGY</span>
+</div></div>
+
+<section id="services">
+<div class="container">
+<div class="reveal"><div class="label">What I Do</div><h2 class="title">Creative services built around your brand.</h2><p class="desc">From a logo to complete marketing visuals, I turn ideas into professional designs that help businesses stand out.</p></div>
+<div class="grid3">
+<div class="service reveal"><div class="num">01</div><div class="icon">✦</div><h3>Logo Design</h3><p>Memorable logos designed to give your business a strong visual identity.</p></div>
+<div class="service reveal"><div class="num">02</div><div class="icon">◈</div><h3>Brand Identity</h3><p>Complete visual systems that make your brand consistent and recognizable.</p></div>
+<div class="service reveal"><div class="num">03</div><div class="icon">✧</div><h3>Social Media</h3><p>Scroll-stopping graphics designed to capture attention and communicate your message.</p></div>
+<div class="service reveal"><div class="num">04</div><div class="icon">▣</div><h3>Flyer & Ads</h3><p>Promotional designs that present your offer clearly and encourage action.</p></div>
+<div class="service reveal"><div class="num">05</div><div class="icon">◎</div><h3>Product Design</h3><p>Premium visuals that make products look polished, desirable and ready to sell.</p></div>
+<div class="service reveal"><div class="num">06</div><div class="icon">↗</div><h3>Creative Direction</h3><p>Creative concepts and visual direction built around your audience and goals.</p></div>
+</div>
+</div>
+</section>
+
+<section class="dark">
+<div class="container">
+<div class="reveal"><div class="label">Why Yusuf Creative</div><h2 class="title">Design with purpose, not decoration.</h2></div>
+<div class="benefits">
+<div class="benefit reveal"><span>01 / STRATEGY</span><h3>Every design has a purpose.</h3><p>Your design should communicate something. I focus on visuals that support your message, audience and business goals.</p></div>
+<div class="benefit reveal"><span>02 / QUALITY</span><h3>Premium visual execution.</h3><p>Clean layouts, typography, composition and attention to detail help your brand look professional and trustworthy.</p></div>
+<div class="benefit reveal"><span>03 / COLLABORATION</span><h3>Your idea matters.</h3><p>I work with your ideas and feedback throughout the process to create something that feels right for your brand.</p></div>
+<div class="benefit reveal"><span>04 / IMPACT</span><h3>Designed to stand out.</h3><p>Strong visual communication helps your business capture attention and create a memorable impression.</p></div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<div class="reveal"><div class="label">Selected Work</div><h2 class="title">Ideas turned into visuals.</h2><p class="desc">A selection of my graphic design work across branding, advertising, social media and creative design.</p></div>
+<div class="portfolio">
+<div class="project reveal"><img src="assets/nevora.png" alt="Nevora project"><div class="project-info"><small>BRAND IDENTITY</small><h3>Nevora</h3></div></div>
+<div class="project reveal"><img src="assets/zest-zobo.png" alt="Zest Zobo project"><div class="project-info"><small>PRODUCT ADVERTISING</small><h3>Zest Zobo</h3></div></div>
+<div class="project reveal"><img src="assets/jbl-t510bt.png" alt="JBL T510BT project"><div class="project-info"><small>PRODUCT ADVERTISING</small><h3>JBL T510BT</h3></div></div>
+<div class="project reveal"><img src="assets/nike.png" alt="Nike project"><div class="project-info"><small>SPORTS ADVERTISING</small><h3>Nike Campaign</h3></div></div>
+<div class="project reveal"><img src="assets/birthday-poster.png" alt="Birthday poster project"><div class="project-info"><small>SOCIAL MEDIA DESIGN</small><h3>Birthday Poster</h3></div></div>
+<div class="project reveal"><img src="assets/bloom-petals.png" alt="Bloom and Petals project"><div class="project-info"><small>ADVERTISING DESIGN</small><h3>Bloom & Petals</h3></div></div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="about">
+<div class="container">
+<div class="about">
+<div class="about-logo reveal"><img src="assets/yusuf-creative-logo.png" alt="Yusuf Creative logo"></div>
+<div class="reveal">
+<div class="label">About Yusuf Creative</div>
+<h2 class="title">I turn ideas into visuals people remember.</h2>
+<p>I'm Yusuf, a graphic designer focused on creating modern, professional and engaging visual designs for businesses, brands and creators.</p>
+<p>From branding and social media graphics to advertisements and promotional designs, my goal is to make your ideas look as good as they deserve.</p>
+<div class="stats">
+<div class="stat"><strong>100%</strong><small>Creative Focus</small></div>
+<div class="stat"><strong>∞</strong><small>Ideas</small></div>
+<div class="stat"><strong>24/7</strong><small>Creative Mind</small></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="reveal"><div class="label">Client Experience</div><h2 class="title">Good design. Good experience.</h2></div>
+<div class="testimonials">
+<div class="testimonial reveal"><div class="stars">★★★★★</div><p>"The design came out better than I expected. Clean, professional and exactly what I needed."</p><div class="client"><div class="avatar">A</div><div><strong>Client</strong><br><small>Business Owner</small></div></div></div>
+<div class="testimonial reveal"><div class="stars">★★★★★</div><p>"Very creative and easy to work with. My brand looks much more professional now."</p><div class="client"><div class="avatar">M</div><div><strong>Client</strong><br><small>Brand Owner</small></div></div></div>
+<div class="testimonial reveal"><div class="stars">★★★★★</div><p>"Professional work and great communication. I'm very happy with the final result."</p><div class="client"><div class="avatar">J</div><div><strong>Client</strong><br><small>Entrepreneur</small></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="dark">
+<div class="container">
+<div class="reveal"><div class="label">Questions & Answers</div><h2 class="title">Everything you need to know before we start.</h2></div>
+<div class="faq">
+<div class="faq-item reveal"><button class="question">What design services do you offer?<span>+</span></button><div class="answer"><p>I offer logo design, brand identity, flyers, social media designs, product advertisements, posters and other creative design services.</p></div></div>
+<div class="faq-item reveal"><button class="question">How do I start a project?<span>+</span></button><div class="answer"><p>Click any Start a Project or Hire Me button. You'll be taken directly to WhatsApp where we can discuss your project.</p></div></div>
+<div class="faq-item reveal"><button class="question">How long does a design take?<span>+</span></button><div class="answer"><p>Delivery time depends on the type and complexity of the project. I'll confirm the timeline before starting.</p></div></div>
+<div class="faq-item reveal"><button class="question">Can I request changes?<span>+</span></button><div class="answer"><p>Yes. Revisions can be discussed before the project begins so expectations are clear.</p></div></div>
+<div class="faq-item reveal"><button class="question">Do you design for businesses and individuals?<span>+</span></button><div class="answer"><p>Yes. I work with businesses, brands, entrepreneurs, creators and individuals.</p></div></div>
+<div class="faq-item reveal"><button class="question">How much do your services cost?<span>+</span></button><div class="answer"><p>Pricing depends on the specific design project. Contact me on WhatsApp for a quote.</p></div></div>
+<div class="faq-item reveal"><button class="question">Can you create a complete brand identity?<span>+</span></button><div class="answer"><p>Yes. I can help create a consistent visual identity including logos, colors, typography and supporting brand materials.</p></div></div>
+<div class="faq-item reveal"><button class="question">How can I contact Yusuf Creative?<span>+</span></button><div class="answer"><p>Click any WhatsApp button or email button on the website and I'll receive your message.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container cta-content reveal">
+<div class="label">Let's Create</div>
+<h2>Have an idea?<br><span class="gradient">Let's design it.</span></h2>
+<p>Tell me about your brand, business or project and let's turn your idea into something people remember.</p>
+<div class="buttons" style="justify-content:center">
+<a class="btn primary" target="_blank" href="https://wa.me/2348030425401?text=Hello%20Yusuf%20Creative%2C%20I%20want%20to%20start%20a%20design%20project.">Chat on WhatsApp →</a>
+<a class="btn secondary" href="mailto:yusufabdulrahmon19822@gmail.com">Send an Email ✉</a>
+</div>
+<div class="contact-box">
+<a href="mailto:yusufabdulrahmon19822@gmail.com">yusufabdulrahmon19822@gmail.com</a>
+<a target="_blank" href="https://wa.me/2348030425401">+234 803 042 5401</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer">
+<p>© 2026 Yusuf Creative. All rights reserved.</p>
+<div class="socials"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a><a target="_blank" href="https://wa.me/2348030425401">WhatsApp</a></div>
+</div>
+</div>
+</footer>
+
+<a class="whatsapp" target="_blank" href="https://wa.me/2348030425401?text=Hello%20Yusuf%20Creative%2C%20I%27d%20like%20to%20discuss%20a%20design%20project." aria-label="Chat on WhatsApp">☎</a>
+
+<script>
+const menu=document.getElementById("menu"),nav=document.getElementById("navLinks");
+menu.onclick=()=>nav.classList.toggle("active");
+document.querySelectorAll(".nav-links a").forEach(a=>a.onclick=()=>nav.classList.remove("active"));
+
+document.querySelectorAll(".question").forEach(q=>{
+q.onclick=()=>{
+const item=q.parentElement,answer=item.querySelector(".answer");
+document.querySelectorAll(".faq-item").forEach(x=>{
+if(x!==item){x.classList.remove("active");x.querySelector(".answer").style.maxHeight=null;}
+});
+item.classList.toggle("active");
+answer.style.maxHeight=item.classList.contains("active")?answer.scrollHeight+"px":null;
+};
+});
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{
+if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target);}
+});
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(x=>observer.observe(x));
+</script>
+
+</body>
+</html>
